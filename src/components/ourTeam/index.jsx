@@ -2,7 +2,7 @@
 
 const OurTeam = () => {
   return (
-    <div className="team-wrap">
+    <div className="team-wrap" id="team">
       <img
         src="img/team/team-shape-3.webp"
         alt="Image"

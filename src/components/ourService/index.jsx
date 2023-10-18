@@ -3,7 +3,7 @@
 
 const OurService = () => {
   return (
-    <div className="service-wrap ptb-100">
+    <div className="service-wrap ptb-100" id="services">
       <div className="container-fluid">
         <div className="row align-items-center">
           <div

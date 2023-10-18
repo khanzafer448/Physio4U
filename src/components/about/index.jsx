@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <div className="about-wrap-one">
+    <div className="about-wrap-one" id="about">
       <img
         src="img/about/about-shape-1.webp"
         alt="Image"
