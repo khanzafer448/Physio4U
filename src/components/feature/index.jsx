@@ -16,10 +16,11 @@ const Feature = () => {
               <span className="feature-icon">
                 <i className="flaticon-team"></i>
               </span>
-              <h3>Expert Therapists</h3>
+              <h3>Physiotherapy</h3>
               <p>
-                It uses a dictionary of over Latin words, combined with a
-                handful of model sentence structures, to generate which look
+                Physiotherapy is a clinical health profession that aims to
+                rehabilitate people following injury and improve movement
+                disorders.
               </p>
             </div>
           </div>
@@ -34,10 +35,11 @@ const Feature = () => {
               <span className="feature-icon">
                 <i className="flaticon-24-hours"></i>
               </span>
-              <h3>Emergency Service</h3>
+              <h3>Rehabilitation</h3>
               <p>
-                It uses a dictionary of over Latin words, combined with a
-                handful of model sentence structures, to generate which look
+                A physician having completed training in this field is referred
+                to as a physiatrist. Physiatrists specialize in restoring
+                optimal function to people with injuries to the muscles, bones.
               </p>
             </div>
           </div>
@@ -52,17 +54,18 @@ const Feature = () => {
               <span className="feature-icon">
                 <i className="flaticon-conversation"></i>
               </span>
-              <h3>Free Consultation</h3>
+              <h3>Manual Therapy</h3>
               <p>
-                It uses a dictionary of over Latin words, combined with a
-                handful of model sentence structures, to generate which look
+                Manual therapy, or manipulative therapy, is a physical treatment
+                primarily used by massage therapists. manual therapy is defined
+                as a clinical approach utilizing skilled techniques.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

@@ -56,8 +56,8 @@ const HeroBanner = () => {
                     data-aos-duration="1200"
                     data-aos-delay="400"
                   >
-                    <a href="#" className="btn-one">
-                      Our Services
+                    <a href="/appointment" className="btn-one">
+                      Book Appointment
                     </a>
                     <div className="client-likes">
                       <ul className="list-style">

@@ -31,8 +31,8 @@ const WhyUS = () => {
               <div className="wh-info">
                 <h3>Personalized Treatment</h3>
                 <p>
-                  It is a long established fact a reader will be distracted
-                  readable content of a page looking
+                  Our exercise are personalized to meet specific goals,
+                  enhancing athletic performance.
                 </p>
               </div>
             </div>
@@ -50,8 +50,8 @@ const WhyUS = () => {
               <div className="wh-info">
                 <h3>Therapy Goals</h3>
                 <p>
-                  It is a long established fact a reader will be distracted
-                  readable content of a page looking
+                  We combine hands-on therapies and lifestyle recommendations to
+                  help you reclaim a pain-free life.
                 </p>
               </div>
             </div>
@@ -69,8 +69,8 @@ const WhyUS = () => {
               <div className="wh-info">
                 <h3>Experience Staff</h3>
                 <p>
-                  It is a long established fact a reader will be distracted
-                  readable content of a page looking
+                  Experience the healing of hands-on techniques. Our
+                  therapists are experts in manual therapy.
                 </p>
               </div>
             </div>
@@ -88,8 +88,8 @@ const WhyUS = () => {
               <div className="wh-info">
                 <h3>Comfortable Clinic</h3>
                 <p>
-                  It is a long established fact a reader will be distracted
-                  readable content of a page looking
+                  Explain user-friendly appointment scheduling processes,
+                  whether online or over the phone.
                 </p>
               </div>
             </div>

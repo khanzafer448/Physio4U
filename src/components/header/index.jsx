@@ -18,9 +18,9 @@ const Header = () => {
               navbarScroll
             >
               <Link className="nav-link" to="/">Home</Link>
-              <a className="nav-link" href="#about">About Us</a>
-              <a className="nav-link" href="#services">Services</a>
-              <a className="nav-link" href="#team">Our Teams</a>
+              <a className="nav-link" href="/#about">About Us</a>
+              <a className="nav-link" href="/#services">Services</a>
+              <a className="nav-link" href="/#team">Our Teams</a>
             </Nav>
             <Link className="btn-two" to="/appointment">Book Appointment</Link>
           </Navbar.Collapse>

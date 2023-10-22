@@ -13,7 +13,10 @@ const Footer = () => {
           className="footer-shape-two md-none"
         />
         <div className="container">
-          <div className="row pt-100 pb-75">
+          <div
+            className="row pt-100 pb-75"
+            style={{ justifyContent: "space-between" }}
+          >
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
               <div className="footer-widget">
                 <a href="#" className="footer-logo">
@@ -64,7 +67,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-6">
+            {/* <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-sm-6">
               <div className="footer-widget">
                 <h3 className="footer-widget-title">Quick Links</h3>
                 <ul className="footer-menu list-style">
@@ -85,7 +88,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="col-xxl-3 col-xl-2 col-lg-2 col-md-6 col-sm-6 ps-xl-4">
               <div className="footer-widget">
                 <h3 className="footer-widget-title">Services</h3>
@@ -138,9 +141,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="copyright-text">
+      <p className="copyright-text"
+      style={{
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center"
+      }}
+      >
         <i className="ri-copyright-line"></i>
-        Physio4U all right received
+        2023 - Physio4U all right received
       </p>
     </footer>
   );

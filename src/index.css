@@ -21,6 +21,11 @@
   --transitionTwo: all ease 0.9s;
 }
 
+::selection{
+  background-color: var(--optionalColor);
+  color: var(--bgColorTwo);
+}
+
 /*---------------------------------
             General Styles 
 -----------------------------------*/

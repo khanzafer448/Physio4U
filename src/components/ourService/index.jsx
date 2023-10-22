@@ -17,8 +17,9 @@ const OurService = () => {
                 <span>Our Services</span>
                 <h2>We Offer Various Physio Disciplines</h2>
                 <p>
-                  Making this the first true generator on the Internet. It uses
-                  a dictionary of over 200 Latin words
+                  We take pride in offering a diverse range of physiotherapy
+                  disciplines, providing tailored solutions to meet the unique
+                  needs of our patients.
                 </p>
                 <a href="#" className="btn-one">
                   View All Servises
@@ -36,9 +37,7 @@ const OurService = () => {
                     </div>
                     <div className="service-info">
                       <h3>
-                        <a href="#">
-                          Physiotherapy Treatment
-                        </a>
+                        <a href="#">Physiotherapy Treatment</a>
                       </h3>
                       <p>
                         It is a long established fact that eade will be
@@ -102,9 +101,7 @@ const OurService = () => {
                     </div>
                     <div className="service-info">
                       <h3>
-                        <a href="#">
-                          Personalized Physio Treatment
-                        </a>
+                        <a href="#">Personalized Physio Treatment</a>
                       </h3>
                       <p>
                         It is a long established fact that eade will be
