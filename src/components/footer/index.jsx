@@ -141,12 +141,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="copyright-text"
-      style={{
-        display:"flex",
-        alignItems:"center",
-        justifyContent:"center"
-      }}
+      <p
+        className="copyright-text"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
         <i className="ri-copyright-line"></i>
         2023 - Physio4U all right received
