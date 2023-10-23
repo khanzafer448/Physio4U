@@ -1,6 +1,4 @@
-// import React from 'react'
-// import "swiper/css";
-// import "./style.css";
+import { Link } from "react-router-dom";
 
 const HeroBanner = () => {
   return (
@@ -56,9 +54,9 @@ const HeroBanner = () => {
                     data-aos-duration="1200"
                     data-aos-delay="400"
                   >
-                    <a href="/appointment" className="btn-one">
+                    <Link to="/appointment" className="btn-one">
                       Book Appointment
-                    </a>
+                    </Link>
                     <div className="client-likes">
                       <ul className="list-style">
                         <li>
