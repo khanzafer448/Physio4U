@@ -36,7 +36,7 @@ const OurTeam = () => {
                 <img src="img/team/team-1.webp" alt="Image" />
               </div>
               <h3>Dr. Shaikh Abu Waqas</h3>
-              <span>Director</span>
+              <span>Founder</span>
             </div>
           </div>
           <div
@@ -50,7 +50,7 @@ const OurTeam = () => {
                 <img src="img/team/team-2.webp" alt="Image" />
               </div>
               <h3>Dr. Shikha Singh</h3>
-              <span>Senior Therapist</span>
+              <span>Director</span>
             </div>
           </div>
           <div
