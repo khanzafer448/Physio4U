@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header navbar-area sticky">
       <Navbar expand="lg">
         <div className="container">
           <Link to="/">
