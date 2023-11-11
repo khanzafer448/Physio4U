@@ -543,6 +543,7 @@
   }
   .video-bg,
   .video-bg-two {
+    display: none;
     height: 400px;
   }
   .help-wrap .help-content .content-title-one {

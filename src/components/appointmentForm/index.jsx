@@ -5,9 +5,11 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
+import FeedBackModal from "./feedBackModal";
 
 const AppointmentForm = () => {
   const [accept, setAccept] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const ContactSchema = yup.object().shape({
     name: yup.string().required("Please input your name"),
     email: yup.string().email().required("Please input your email"),
@@ -38,11 +40,23 @@ const AppointmentForm = () => {
     formData.append("message", data.message);
     formData.append("_captcha", data._captcha);
 
-    const res = await axios.post(
-      "https://formsubmit.co/physio4u23@gmail.com",
-      formData
-    );
-    console.log(res);
+    try {
+      const res = await axios.post(
+        "https://formsubmit.co/physio4u23@gmail.com",
+        formData
+      );
+
+      if (res?.status === 200) {
+        setShowModal(true);
+        setTimeout(() => {
+          setShowModal(false);
+          setAccept(false);
+        }, 5000);
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the form:", error);
+    }
+
     reset();
   };
 
@@ -168,7 +182,7 @@ const AppointmentForm = () => {
                       className="form-check-input"
                       type="checkbox"
                       id="gridCheck"
-                      onChange={()=>setAccept(!accept)}
+                      onChange={() => setAccept(!accept)}
                     />
                     <label className="form-check-label" htmlFor="gridCheck">
                       This form is for demo purposes only. No data will be
@@ -190,7 +204,11 @@ const AppointmentForm = () => {
                 </div>
               </div>
               <div className="col-12">
-                <Button type="submit" className="btn-one d-block w-100" disabled={!accept}>
+                <Button
+                  type="submit"
+                  className="btn-one d-block w-100"
+                  disabled={!accept}
+                >
                   Submit
                 </Button>
                 <div id="msgSubmit" className="h3 text-center hidden"></div>
@@ -200,6 +218,7 @@ const AppointmentForm = () => {
           </Form>
         </div>
       </div>
+      <FeedBackModal showModal={showModal} setShowModal={setShowModal} />
     </div>
   );
 };
