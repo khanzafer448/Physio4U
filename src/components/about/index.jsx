@@ -41,22 +41,24 @@ const About = () => {
                 <span>About Clinic</span>
                 <h2>We’re Offering Whole Range of Treatments For You</h2>
                 <p>
-                  Making this the first true generator on the Internet. It uses
-                  a dictiony of atim over 200 Latin words, combined this the
-                  first true
+                  Physio4u is a modern well-equipped physiotherapy and
+                  health-care service provider in Lucknow with online and ofﬂine
+                  concept of health-care services. It’s an initiative by Physio
+                  Shaikh Abu Waqas and Physio Shikha singh . Under his
+                  leadership he has conducted many camps in healthcare.
                 </p>
                 <ul className="content-feature-list list-style">
                   <li>
-                    <i className="ri-check-line"></i>Refresing to get such a
-                    personal touch.
+                    <i className="ri-check-line"></i>A hands-on approach to help
+                    achieve your goals.
                   </li>
                   <li>
-                    <i className="ri-check-line"></i>Duis aute irure dolor in
-                    reprehenderit in voluptate.
+                    <i className="ri-check-line"></i>Combining passion and
+                    knowledge to heal.
                   </li>
                   <li>
-                    <i className="ri-check-line"></i>Velit esse cillum dolore eu
-                    fugiat nulla pariatur.
+                    <i className="ri-check-line"></i>Helping you keep active and
+                    injury free.
                   </li>
                 </ul>
                 <a href="#" className="btn-one">
