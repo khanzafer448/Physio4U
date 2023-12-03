@@ -1,5 +1,39 @@
 // import React from 'react'
-
+import PropTypes from "prop-types";
+const data = [
+  {
+    title: "Chronic back Pain",
+    img: "/img/whyUs/muscle-pain.png",
+  },
+  {
+    title: "Neck Pain",
+    img: "/img/whyUs/neckPain.png",
+  },
+  {
+    title: "Post-accident Physiotherapy",
+    img: "/img/whyUs/rehabilitation.png",
+  },
+  {
+    title: "Frozen shoulder",
+    img: "/img/whyUs/chiropractic.png",
+  },
+  {
+    title: "Paraplegia",
+    img: "/img/whyUs/massage.png",
+  },
+  {
+    title: "Quadriplegia",
+    img: "/img/whyUs/back.png",
+  },
+  {
+    title: "Back pain by Slipped Disc",
+    img: "/img/whyUs/backPain.png",
+  },
+  {
+    title: "Paralysis",
+    img: "/img/whyUs/exercise-ball.png",
+  },
+];
 const WhyUS = () => {
   return (
     <div className="wh-wrap-one pt-100 pb-75">
@@ -17,83 +51,10 @@ const WhyUS = () => {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
-          <div
-            className="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="200"
-          >
-            <div className="wh-card-one">
-              <span className="wh-icon">
-                <i className="flaticon-treatment"></i>
-              </span>
-              <div className="wh-info">
-                <h3>Personalized Treatment</h3>
-                <p>
-                  Our exercise are personalized to meet specific goals,
-                  enhancing athletic performance.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="300"
-          >
-            <div className="wh-card-one">
-              <span className="wh-icon">
-                <i className="flaticon-gene-therapy"></i>
-              </span>
-              <div className="wh-info">
-                <h3>Therapy Goals</h3>
-                <p>
-                  We combine hands-on therapies and lifestyle recommendations to
-                  help you reclaim a pain-free life.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="400"
-          >
-            <div className="wh-card-one">
-              <span className="wh-icon">
-                <i className="flaticon-doctors"></i>
-              </span>
-              <div className="wh-info">
-                <h3>Experience Staff</h3>
-                <p>
-                  Experience the healing of hands-on techniques. Our
-                  therapists are experts in manual therapy.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-xxl-3 col-xl-4 col-lg-6 col-md-6"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="500"
-          >
-            <div className="wh-card-one">
-              <span className="wh-icon">
-                <i className="flaticon-hospital"></i>
-              </span>
-              <div className="wh-info">
-                <h3>Comfortable Clinic</h3>
-                <p>
-                  Explain user-friendly appointment scheduling processes,
-                  whether online or over the phone.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="why-us-wrapper">
+          {data.map((item, i) => (
+            <IndividualCard key={i} item={item} />
+          ))}
         </div>
       </div>
     </div>
@@ -101,3 +62,28 @@ const WhyUS = () => {
 };
 
 export default WhyUS;
+
+const IndividualCard = ({ item }) => {
+  return (
+    <div
+      className="why-us-content wh-card-one"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-delay="300"
+    >
+      <img src={item?.img} alt={item?.title} />
+      <p>{item?.title}</p>
+    </div>
+  );
+};
+
+IndividualCard.defaultProps = {
+  item: {
+    title: "added soon",
+    img: "/img/logo.png",
+  },
+};
+
+IndividualCard.propTypes = {
+  item: PropTypes.object,
+};

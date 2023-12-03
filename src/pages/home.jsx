@@ -7,6 +7,7 @@ import MoveText from "../components/moveText";
 import OurService from "../components/ourService";
 import OurTeam from "../components/ourTeam";
 import WhyUS from "../components/whyUs";
+import AppointmentForm from "../components/appointmentForm";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Feature />
       <About />
       <WhyUS />
+      <AppointmentForm />
       <MoveText />
       <OurService />
       <IntroVideo />

@@ -53,7 +53,7 @@ const OurTeam = () => {
               <span>Director</span>
             </div>
           </div>
-          <div
+          {/* <div
             className="col-xl-3 col-lg-4 col-md-6"
             data-aos="fade-in"
             data-aos-duration="1200"
@@ -80,7 +80,7 @@ const OurTeam = () => {
               <h3>Keven Freeman</h3>
               <span>Manager</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
