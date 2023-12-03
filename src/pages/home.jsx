@@ -14,11 +14,11 @@ const Home = () => {
     <Layout>
       <HeroBanner />
       <AppointmentForm />
+      <OurService />
       <Feature />
       <About />
       <WhyUS />
       <MoveText />
-      <OurService />
       <IntroVideo />
       {/* <OurTeam /> */}
     </Layout>
